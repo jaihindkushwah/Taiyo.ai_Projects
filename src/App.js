@@ -11,7 +11,7 @@ function App() {
   return (
     <BrowserRouter>
     <collapseContext.Provider value={{isCollapse,setCollapse}}>
-      <div className="App flex items-center w-full h-screen bg-red-300">
+      <div className="App flex items-center w-screen h-screen bg-red-300">
         <SideBar/>
         <div className="flex flex-col justify-start w-full min-h-screen">
           <TopBar/>

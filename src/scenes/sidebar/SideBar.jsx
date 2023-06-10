@@ -13,7 +13,7 @@ function SideBar() {
         <List>
           <ListItem onClick={()=>{setCollapse(!isCollapse)}} className='flex justify-center self-center'>
                 <div className='h-7 mt-3'>
-                  <XMarkIcon className=' h-full'/>
+                  <XMarkIcon className=' h-6'/>
                 </div>
           </ListItem>
           <div className='mt-3 mb-4'>
