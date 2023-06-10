@@ -15,7 +15,7 @@ function App() {
         <SideBar/>
         <div className="flex flex-col justify-start w-full min-h-screen">
           <TopBar/>
-          <div className="top-16 fixed w-full h-full flex-1">
+          <div className="top-16 fixed w-full h-full mb-10">
               <Routes>
                 <Route path="/" element={<ContactPage/>} />
                 <Route path="/contact" element={<ContactPage/>} />
