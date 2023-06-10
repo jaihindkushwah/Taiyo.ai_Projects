@@ -1,24 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import SideBar from "./scenes/sidebar/SideBar";
+import TopBar from "./scenes/topbar/TopBar";
+import ContactPage from "./scenes/contact/ContactPage";
+import MapAndChartPage from "./scenes/map&chart/MapAndChartPage";
+import { collapseContext } from "./collapseContext/collapseContext";
+import { useState } from "react";
 
 function App() {
+  const [isCollapse,setCollapse]=useState(false);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+    <collapseContext.Provider value={{isCollapse,setCollapse}}>
+      <div className="App flex items-center w-full h-screen bg-red-300">
+        <SideBar/>
+        <div className="flex flex-col justify-start w-full min-h-screen">
+          <TopBar/>
+            <Routes>
+              <Route path="/" element={<ContactPage/>} />
+              <Route path="/contact" element={<ContactPage/>} />
+              <Route path="/mapandchart" element={<MapAndChartPage/>}/>
+            </Routes>
+        </div>
+      </div>
+    
+    </collapseContext.Provider>
+    </BrowserRouter>
   );
 }
 
