@@ -16,21 +16,21 @@ function SideBar() {
                   <XMarkIcon className='h-6 w-8'/>
                 {/* </div>  */}
           </IconButton>
-          <div className='mt-3 mb-4'>
-            <h2 className='p-5'>Sidebar</h2>
+          <div className='mt-3 mb-4 flex items-center justify-center'>
+            <img src='https://cdn-icons-png.flaticon.com/512/3459/3459528.png' width={80} alt='logo'/>
           </div>
-          <ListItem onClick={()=>{navigate('/')}} className='p-1 mt-4'>
-            <ListItemPrefix>
-              <UserGroupIcon className='h-5 w-6 mr-1' />
+          <ListItem onClick={()=>{navigate('/')}} className='p-1 mt-4 text-[16px]'>
+            <ListItemPrefix >
+              <UserGroupIcon className='h-7 w-8 mr-1' />
             </ListItemPrefix>
-            Users
+            <span className='text-[16px]'>Contact</span>
           </ListItem>
-          <ListItem onClick={()=>{navigate('/mapandchart')}} className='p-1 mt-4'>
+          <ListItem onClick={()=>{navigate('/mapandchart')}} className='p-1 mt-4 '>
             {/* <Link to={'/'}> */}
               <ListItemPrefix>
-                <PresentationChartBarIcon className='h-5 w-6 mr-1' />
+                <PresentationChartBarIcon className='h-7 w-8 mr-1' />
               </ListItemPrefix>
-              Charts and Maps
+              <span>Chart and Map</span>
             {/* </Link> */}
           </ListItem>
         </List>

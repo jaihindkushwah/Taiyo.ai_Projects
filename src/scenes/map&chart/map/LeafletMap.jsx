@@ -20,7 +20,7 @@ const MapComponent = () => {
     })
 
   return (
-    <Map center={[0, 0]} zoom={2} className='z-10 sm:h-[450px] w-full sm:bg-slate-400 text-red-50'>
+    <Map center={[0, 0]} zoom={2} className='z-10 sm:h-[450px] h-[240px]  w-full sm:bg-slate-400 text-red-50'>
       <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
       {countriesData.map((country) => (
         <Marker position={[country.countryInfo.lat, country.countryInfo.long]} icon={customIcon} key={country.name}>
