@@ -9,8 +9,8 @@ function ContactItem({id,firstname,lastname,status}) {
   const dispatch=useDispatch();
 
   return (
-    <div className="flex flex-col justify-center shadow-lg shadow-red-2 p-3 text-sm">
-        <div className="w-[240px] h-[200px] flex flex-col items-center justify-center bg-blue-200">
+    <div className="flex flex-col justify-center shadow-lg shadow-red-2 p-3 text-sm ">
+        <div className="w-[236px] h-[200px] flex flex-col items-center justify-center bg-blue-200">
             <div className='flex flex-col gap-2 text-[16px]'>
             <span>First Name: {firstname}</span>
             <span>Last Name: {lastname}</span>

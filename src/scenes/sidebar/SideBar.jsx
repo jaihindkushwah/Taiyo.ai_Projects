@@ -8,7 +8,7 @@ function SideBar() {
   const navigate=useNavigate();
  const {isCollapse,setCollapse}= useContext(collapseContext);
   return (
-    <div className='h-screen fixed top-0 z-50 w-60 bg-red-100 flex flex-col items-center ease-in duration-300' style={{marginLeft:isCollapse && '-240px'} }>
+    <div className='z-50 h-screen fixed top-0 z-50 w-60 bg-red-100 flex flex-col items-center ease-in duration-300' style={{marginLeft:isCollapse && '-240px'} }>
       <div>
         <List>
           <IconButton variant='outlined' onClick={()=>{setCollapse(!isCollapse)}} className='flex justify-center self-center items-center shadow-none'>
