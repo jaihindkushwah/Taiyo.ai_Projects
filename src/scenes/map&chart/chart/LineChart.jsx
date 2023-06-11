@@ -29,7 +29,7 @@ const options = {
       },
       title: {
         display: true,
-        text: 'Chart.js Line Chart',
+        text: 'Covid-19 All Country Reports',
       },
     },
   };
@@ -61,8 +61,8 @@ function LineChart() {
     
 
   return (
-    <div className='z-10 h-full sm:w-5/6 w-full sm:bg-slate-500 sm:ml-10 sm:mt-14 p-4 text-red-50'>
-        {Object.entries(allCovidData).length>0 && <Line className=' bg-slate-500'
+    <div className='z-10 h-full sm:w-5/6 w-full sm:bg-slate-400 sm:ml-10 sm:mt-14 p-4 text-red-50'>
+        {Object.entries(allCovidData).length>0 && <Line 
           data={{
             labels: allCovidData.dates.map((date) => new Date(date).toLocaleDateString()),
             datasets: [...allCovidData.modifedData],

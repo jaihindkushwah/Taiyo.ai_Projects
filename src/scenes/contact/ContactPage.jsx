@@ -17,7 +17,7 @@ function ContactPage(){
               
               { contactsData.length >0 ? <ContactsList/>:
                 <> 
-                  <div className="bg-red-100 m-3 p-5 flex justify-around items-center mb-5">
+                  <div className="bg-red-50 m-3 p-5 flex justify-around items-center mb-5">
                   <div className="">
                     <XCircleIcon className="w-8 h-8 mr-3"/>
                   </div>

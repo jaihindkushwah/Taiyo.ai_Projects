@@ -5,7 +5,7 @@ import ContactForm from '../../components/ContactForm'
 
 function CreateContactPage() {
   return (
-    <MainComponent>
+    <MainComponent title={'Contact Page'}>
         <ContactForm/>
     </MainComponent>
   )

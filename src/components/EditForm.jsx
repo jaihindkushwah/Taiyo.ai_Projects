@@ -52,7 +52,7 @@ function EditForm({id}) {
                     </div>
                 </div>
                 <div>
-                    <Button variant='filled' type='submit' className='p-2 pr-7 pl-7 text-[14px] sm:text-[18px]' >Save Editted Contact</Button>
+                    <Button variant='filled' type='submit' className='p-2 pr-7 pl-7 text-[14px] sm:text-[18px] bg-slate-100' >Save Editted Contact</Button>
                 </div>
             </div>
         </form>
