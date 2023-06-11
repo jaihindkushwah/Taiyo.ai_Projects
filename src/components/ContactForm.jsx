@@ -27,12 +27,12 @@ function ContactForm({status='active'}) {
 
         };
   return (
-    <div className='flex-1 flex flex-col justify-around items-center sm:w-[600px] text-[18px]'>
+    <div className='flex-1 flex flex-col justify-around items-center sm:w-[600px] text-[16px] sm:text-[18px'>
         <div>
             Create Contact Screen
         </div>
         <form action="" onSubmit={formHandler}>
-            <div className=' flex flex-col justify-around gap-6 items-center p-3'>
+            <div className=' flex flex-col justify-around gap-3 items-center p-3'>
                 <label htmlFor="firstname"> <span>First Name : </span>
                     <input name='firstname' className='pl-1'  type="text" />
                 </label>
