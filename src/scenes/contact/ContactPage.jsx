@@ -9,7 +9,7 @@ function ContactPage(){
           <h2 className="text-xl font-normal">Create Page</h2>
         </div>
         <div className="flex justify-around items-center flex-col border-blue-700 mt-[-1px] border-[8px] min-h-[500px] w-full">
-              <div>
+              <div className="m-6">
                 <button className="bg-slate-400 pt-2 pb-2 pl-4 pr-4">
                   Create Contact
                 </button>
@@ -24,7 +24,9 @@ function ContactPage(){
 
               </div>
               <div className="bg-red-100 m-3 p-5 flex justify-around items-center">
-                <XCircleIcon className="w-8 h-8 mr-3"/>
+                <div className="">
+                  <XCircleIcon className="w-8 h-8 mr-3"/>
+                </div>
                 <p className="text-center">No Contact Found Please add contact from Create Contact Button</p>
               </div>
         </div>
