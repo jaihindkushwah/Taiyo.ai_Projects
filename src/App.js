@@ -11,11 +11,11 @@ function App() {
   return (
     <BrowserRouter>
     <collapseContext.Provider value={{isCollapse,setCollapse}}>
-      <div className="App flex items-center w-screen h-screen bg-red-300">
+      <div className="App flex items-center w-screen h-full bg-red-300">
         <SideBar/>
-        <div className="flex flex-col justify-start w-full min-h-screen">
+        <div className="flex flex-col justify-start w-full h-full">
           <TopBar/>
-          <div className="top-16 fixed w-full h-full pb-10">
+          <div className="top-16 fixed h-full w-full pb-10">
               <Routes>
                 <Route path="/" element={<ContactPage/>} />
                 <Route path="/contact" element={<ContactPage/>} />
