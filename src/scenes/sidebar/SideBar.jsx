@@ -11,7 +11,7 @@ function SideBar() {
     <div className='h-screen fixed top-0 z-50 w-60 bg-red-100 flex flex-col items-center ease-in duration-300' style={{marginLeft:isCollapse && '-240px'} }>
       <div>
         <List>
-          <IconButton variant='standard' onClick={()=>{setCollapse(!isCollapse)}} className='flex justify-center self-center items-center shadow-none'>
+          <IconButton variant='outlined' onClick={()=>{setCollapse(!isCollapse)}} className='flex justify-center self-center items-center shadow-none'>
                 {/* <div className='h-7 mt-3'> */}
                   <XMarkIcon className='h-6 w-8'/>
                 {/* </div>  */}

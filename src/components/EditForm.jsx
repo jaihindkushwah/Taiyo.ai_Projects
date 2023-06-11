@@ -29,7 +29,7 @@ function EditForm({id}) {
 
         };
   return (
-    <div className='flex-1 flex flex-col justify-around items-center sm:w-[600px] text-[16px] sm:text-[18px]'>
+    <div className='flex-1 flex flex-col justify-around items-center sm:w-[600px] text-[14px] sm:text-[18px]'>
         <div>
             Edit Contact Screen
         </div>
