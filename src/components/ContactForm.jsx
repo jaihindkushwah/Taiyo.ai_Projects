@@ -28,7 +28,7 @@ function ContactForm({status='active'}) {
         };
   return (
     <div className='flex-1 flex flex-col justify-around items-center sm:w-[600px] text-[14px] sm:text-[18px]'>
-        <div>
+        <div className='text-[18px]'>
             Create Contact Screen
         </div>
         <form action="" onSubmit={formHandler}>
@@ -50,7 +50,7 @@ function ContactForm({status='active'}) {
                     </div>
                 </div>
                 <div>
-                    <Button variant='filled' type='submit' className='p-2 pr-7 pl-7 text-[18px]' >Save Contact</Button>
+                    <Button variant='filled' type='submit' className='p-2 pr-7 pl-7 text-[14px] sm:text-[18px]' >Save Contact</Button>
                 </div>
             </div>
         </form>

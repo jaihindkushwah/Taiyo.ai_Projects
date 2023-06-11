@@ -30,7 +30,7 @@ function EditForm({id}) {
         };
   return (
     <div className='flex-1 flex flex-col justify-around items-center sm:w-[600px] text-[14px] sm:text-[18px]'>
-        <div>
+        <div className='text-[18px]'>
             Edit Contact Screen
         </div>
         <form onSubmit={(e)=>{formHandler(e)}}>
@@ -52,7 +52,7 @@ function EditForm({id}) {
                     </div>
                 </div>
                 <div>
-                    <Button variant='filled' type='submit' className='p-2 pr-7 pl-7 text-[18px]' >Save Editted Contact</Button>
+                    <Button variant='filled' type='submit' className='p-2 pr-7 pl-7 text-[14px] sm:text-[18px]' >Save Editted Contact</Button>
                 </div>
             </div>
         </form>
