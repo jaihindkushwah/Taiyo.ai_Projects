@@ -9,7 +9,7 @@ import CreateContactPage from "./scenes/contact/CreateContactPage";
 import EditContactPage from "./scenes/contact/EditContactPage";
 
 function App() {
-  const [isCollapse,setCollapse]=useState(false);
+  const [isCollapse,setCollapse]=useState(true);
   return (
     <BrowserRouter>
     <collapseContext.Provider value={{isCollapse,setCollapse}}>

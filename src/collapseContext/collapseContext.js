@@ -1,4 +1,4 @@
 import { createContext } from 'react'
 
 
-export const collapseContext=createContext(false);
+export const collapseContext=createContext(true);
