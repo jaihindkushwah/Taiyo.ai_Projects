@@ -15,7 +15,7 @@ function App() {
         <SideBar/>
         <div className="flex flex-col justify-start w-full h-full">
           <TopBar/>
-          <div className="top-16 fixed h-full w-full pb-10">
+          <div className="">
               <Routes>
                 <Route path="/" element={<ContactPage/>} />
                 <Route path="/contact" element={<ContactPage/>} />
