@@ -3,12 +3,18 @@ import { createSlice } from "@reduxjs/toolkit";
 const contactSlice=createSlice({
     name:"Contact Data",
     initialState:{
-        
+        value:[]
     },
     reducers:{
-        addData:(state,action)=>({}),
-        editData:(state,action)=>({}),
-        deleteData:(state,action)=>({})
+        addData:(state,action)=>({value:[...state.value,action.payload]}),
+        editData:(state,action)=>({
+            value:[...state.value.map(
+                (item)=>{if(item.id===Number(action.payload.id)){return action.payload}else{return item}}
+                )]
+        }),
+        deleteData:(state,action)=>({
+            value:[...state.value.filter((item)=>(item.id!==Number(action.payload)))]
+        })
     }
 })
 
