@@ -4,8 +4,8 @@ import Chart from './chart/Chart'
 
 function MapAndChartPage() {
   return (
-    <div className='p-10'>
-      <div className='h-screen w-7/10 flex justify-center items-center'>
+    <div className='min-h-screen min-w-full flex justify-center items-center'>
+      <div className=' min-h-[500px] min-w-full flex justify-center items-center'>
           <Chart/>
       </div>
     </div>

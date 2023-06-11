@@ -23,7 +23,9 @@ function Chart() {
 
     
   return (
-    <div className='z-10 sm:w-full sm:h-3/4 bg-slate-500 h-[270px] w-[600px] flex justify-center items-center sm:rotate-0 rotate-90'>
+    <div className='z-10 w-11/12 h-[600px] bg-slate-500 sm:ml-10 p-4'>
+        
+        {/* {console.log(data)} */}
         <ResponsiveLine
         data={data}
         
@@ -36,6 +38,7 @@ function Chart() {
             stacked: true,
             reverse: false
         }}
+        curve='monotoneX'
         yFormat=" >.0f"
         axisTop={null}
         axisRight={null}
