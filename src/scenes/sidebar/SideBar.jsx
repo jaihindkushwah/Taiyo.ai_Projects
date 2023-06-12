@@ -17,7 +17,7 @@ function SideBar() {
                 {/* </div>  */}
           </IconButton>
           <div className='mt-3 mb-4 flex items-center justify-center'>
-            <img src='https://cdn-icons-png.flaticon.com/512/3459/3459528.png' width={80} alt='logo'/>
+            <img src='https://cdn-icons-png.flaticon.com/512/3459/3459528.png' className='rounded-[50%] p-2 bg-slate-400' width={90} alt='logo'/>
           </div>
           <ListItem onClick={()=>{navigate('/')}} className='p-1 mt-4 text-[16px]'>
             <ListItemPrefix >
