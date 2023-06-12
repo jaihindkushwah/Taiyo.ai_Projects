@@ -62,7 +62,7 @@ function LineChart() {
 
   return (
     <div className='z-10 h-full sm:w-5/6 w-screen sm:bg-slate-400 sm:ml-10 sm:mt-10 p-4 text-red-50'>
-        {Object.entries(allCovidData).length>0 && <Line className='sm:w-full w-[24]' 
+        {Object.entries(allCovidData).length>0 && <Line width={600} height={250}
           data={{
             labels: allCovidData.dates.map((date) => new Date(date).toLocaleDateString()),
             datasets: [...allCovidData.modifedData],
