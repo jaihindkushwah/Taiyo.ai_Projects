@@ -29,7 +29,7 @@ function EditForm({id}) {
 
         };
   return (
-    <div className='flex-1 flex flex-col justify-around items-center sm:w-[600px] text-[14px] sm:text-[18px]'>
+    <div className='flex-1 flex flex-col justify-around items-center sm:w-[600px] text-[14px] sm:text-[16px]'>
         <div className='text-[18px]'>
             Edit Contact Screen
         </div>
@@ -52,7 +52,7 @@ function EditForm({id}) {
                     </div>
                 </div>
                 <div>
-                    <Button variant='filled' type='submit' className='p-2 pr-7 pl-7 text-[14px] sm:text-[18px] bg-slate-100' >Save Editted Contact</Button>
+                    <Button variant='filled' type='submit' className='p-2 mt-2 pr-7 pl-7 text-[14px] sm:text-[16px] bg-slate-100' >Save Editted Contact</Button>
                 </div>
             </div>
         </form>
