@@ -8,7 +8,7 @@ function TopBar() {
   return (
     <div className=' z-30 min-h-[64px] fixed top-0 w-full bg-slate-800 ease-in-out duration-400' >
         {isCollapse && <div className='mt-3 ml-3'>  
-          <Bars3Icon onClick={()=>{setCollapse(!isCollapse)}} className='w-8 h-7 cursor-pointer'/>
+          <Bars3Icon color='white' onClick={()=>{setCollapse(!isCollapse)}} className='w-8 h-7 cursor-pointer'/>
         </div>}
     </div>
   )
