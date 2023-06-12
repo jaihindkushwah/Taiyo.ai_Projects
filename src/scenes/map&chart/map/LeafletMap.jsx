@@ -24,12 +24,13 @@ const MapComponent = () => {
       <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
       {countriesData.map((country) => (
         <Marker position={[country.countryInfo.lat, country.countryInfo.long]} icon={customIcon} key={country.name}>
-          <Popup>
-            <div>
-              <h2>Country : { country.country}</h2>
-              <p>Total Active Cases: {country.active}</p>
-              <p>Total Recovered Cases: {country.recovered}</p>
-              <p>Total Deaths: {country.deaths}</p>
+          <Popup >
+            <div className='text-[13px]'>
+              <div className='flex items-center justify-center m-1 mb-[12px]'><img src={country.countryInfo.flag} className='border-[2px] border-x-zinc-400 p-[2px] ' width={60} height={40} alt='flag'/></div>
+              <h2><span className='font-semibold'>Country : </span> { country.country}</h2>
+              <p> <span className='font-semibold'>Total Active Cases:</span> {country.active}</p>
+              <p> <span className='font-semibold'>Total Recovered Cases:</span>  {country.recovered}</p>
+              <p> <span className='font-semibold'> Total Deaths:</span> {country.deaths}</p>
             </div>
           </Popup>
         </Marker>
