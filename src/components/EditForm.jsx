@@ -18,7 +18,7 @@ function EditForm({id}) {
         const firstname=formData.get('firstname');
         const lastname=formData.get('lastname');
 
-        const dataObject={id:Number,firstname,lastname,status};
+        const dataObject={id:Number(id),firstname,lastname,status};
         if(!Object.values(dataObject).includes("")){
             dispatch(editData(dataObject))
             navigate('/contact')

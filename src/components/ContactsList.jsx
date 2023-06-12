@@ -7,7 +7,7 @@ function ContactsList() {
   
   return (
     <div className="flex flex-wrap justify-center pl-1 pr-1 gap-3 mb-5">
-      {console.log(contactsData)}
+      
       
         {
           contactsData.map((item)=>{
